@@ -16,6 +16,7 @@ bar = foo.find(text=re.compile('Arsenal'))
 url = bar.parent.parent.attrs['href']
 
 # opening football club's fixture page directly
+url = "http://www.goal.com" + url
 url = url.split('/')
 url_foo =  '/'.join(url[:6])
 url_bar = ''.join(url[6:]) 
